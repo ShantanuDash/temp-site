@@ -1,0 +1,329 @@
+/* General Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  margin: 0 20px;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 10px;
+}
+
+nav a:hover {
+  color: #0070f3;
+}
+
+nav a:focus {
+  outline: none;
+  color: #0070f3;
+}
+
+/* Hero Section Styles */
+
+.hero {
+  background-color: #0070f3;
+  color: #ffffff;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.hero-text form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text input[type="text"] {
+  font-size: 16px;
+  padding: 12px;
+  width: 400px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.hero-text button {
+  background-color: #ffffff;
+  border: none;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 0 4px 4px 0;
+}
+
+.hero-text button:hover {
+  background-color: #e6e6e6;
+  color: #333333;
+}
+
+.hero-text button:focus {
+  outline: none;
+}
+
+/* Services Section Styles */
+
+.services {
+  padding: 80px 20px;
+}
+
+.services h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.services ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services li {
+  margin-bottom: 40px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.services li a {
+  color: #333333;
+  text-align: center;
+}
+
+.services li a:hover {
+  color: #0070f3;
+}
+
+.services li img {
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.services li h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.services li p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* CTA Section Styles */
+
+/* CTA Section Styles */
+
+.cta {
+background-color: #f6f6f6;
+padding: 80px 20px;
+text-align: center;
+}
+
+.cta h2 {
+font-size: 32px;
+font-weight: 600;
+margin-bottom: 40px;
+}
+
+.cta p {
+font-size: 24px;
+font-weight: 400;
+margin-bottom: 40px;
+}
+
+.cta button {
+background-color: #0070f3;
+border: none;
+color: #ffffff;
+font-size: 16px;
+font-weight: 500;
+padding: 12px 32px;
+border-radius: 4px;
+}
+
+.cta button:hover {
+background-color: #0060c0;
+color: #ffffff;
+}
+
+.cta button:focus {
+outline: none;
+}
+
+/* Footer Styles */
+
+footer {
+background-color: #333333;
+color: #ffffff;
+padding: 40px 20px;
+}
+
+footer ul {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+footer li {
+margin-bottom: 20px;
+width: 45%;
+}
+
+footer a {
+color: #ffffff;
+font-size: 16px;
+font-weight: 500;
+}
+
+footer a:hover {
+color: #0070f3;
+}
+
+footer p {
+font-size: 16px;
+font-weight: 400;
+margin-bottom: 20px;
+}
+
+.footer-logo {
+margin-bottom: 40px;
+}
+
+.social-links {
+display: flex;
+justify-content: space-between;
+width: 200px;
+margin: 0 auto;
+}
+
+.social-links a {
+color: #ffffff;
+font-size: 24px;
+}
+
+.social-links a:hover {
+color: #0070f3;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px) {
+nav ul {
+margin: 0;
+}
+
+nav li {
+margin: 0 5px;
+}
+
+.hero-text input[type="text"] {
+width: 300px;
+}
+
+.services li {
+width: 45%;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.hero-text {
+margin-bottom: 40px;
+}
+
+.hero-text h1 {
+font-size: 36px;
+}
+
+.hero-text p {
+font-size: 20px;
+}
+
+.hero-text form {
+flex-direction: column;
+}
+
+.hero-text input[type="text"] {
+width: 100%;
+margin-bottom: 20px;
+border-radius: 4px;
+}
+
+.hero-text button {
+border-radius: 4px;
+width: 100%;
+}
+
+.services li {
+width: 100%;
+}
+}
+
+@media only screen and (max-width: 480px) {
+.services ul {
+justify-content: center;
+}
+
+.services li {
+width: 80%;
+}
+}
